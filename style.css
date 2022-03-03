@@ -126,6 +126,20 @@ and (max-width: 990px)  {
         border-radius: 15px;
     }
 
+    .valveBreak {
+        height: 1.5px; 
+        width: 55%; 
+        opacity: 25%; 
+        top: 135%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        border-radius: 10px; 
+        background-color: black; 
+        z-index: 100;
+    }
+
     ul { list-style-type: none; }
     li { margin-left: -50px; }
 

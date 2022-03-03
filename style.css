@@ -224,7 +224,7 @@ and (max-width: 9999px)  {
         font-family: 'Monserrat', sans-serif;
         color: white;
         font-size: 30px;
-        top: -20%;
+        top: -25%;
         left: 15%;
         position: absolute;
         -ms-transform: translate(-50%, -50%);

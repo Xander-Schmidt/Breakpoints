@@ -161,7 +161,7 @@ and (max-width: 990px)  {
     .valveSect:hover .tenorHint{ opacity: 0%; }
 }
 
-@media (min-width: 995px)
+@media (min-width: 990.1px)
 and (max-width: 2560px)  {
     .priceHolder {
         width: 100%;

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #2C2F33; 
+    margin: 0; 
+    user-select: none;
+}
+
+@media (min-width: 0px)
+and (max-width: 990px)  {
+    .priceHolder {
+        width: 100%; 
+        height: 300px; 
+        top: 50%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
+    }
+
+    .priceSect {
+        width: 300px; 
+        height: 800px; 
+        top: 50%; 
+        left: 50%; 
+        position: fixed; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 black;
+        transition: .5s;
+    }
+
+    .tenorSect {
+        width: 265px; 
+        height: 300px; 
+        text-align: center; 
+        font-family: 'Monsterrat', sans-serif; 
+        color: white; 
+        top: 25%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform:  translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        background-color: aqua; 
+        z-index: 100;
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+        border-radius: 15px;
+    }
+
+    .tenorHint {
+        top: 50%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        z-index: -100;
+        opacity: 15%;
+        transition: .5s;
+    }
+
+    .tenorBreak {
+        height: 1.5px; 
+        width: 55%; 
+        opacity: 25%; 
+        top: 47%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        border-radius: 10px; 
+        background-color: black; 
+        z-index: 100;
+    }
+
+    .bassSect {
+        width: 265px; 
+        height: 300px; 
+        text-align: center; 
+        font-family: 'Monsterrat', sans-serif; 
+        color: white; 
+        top: 69%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform:  translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        background-color: aqua; 
+        z-index: 100;
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat; 
+        border-radius: 15px;
+    }
+
+    .bassBreak {
+        height: 1.5px; 
+        width: 55%; 
+        opacity: 25%; 
+        top: 91%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        border-radius: 10px; 
+        background-color: black; 
+        z-index: 100;
+    }
+
+    .valveSect {
+        width: 265px; 
+        height: 300px; 
+        text-align: center; 
+        font-family: 'Monsterrat', sans-serif; 
+        color: white; 
+        top: 113%; 
+        left: 50%; 
+        position: absolute; 
+        -ms-transform:  translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        background-color: aqua; 
+        z-index: 100;
+        background-image: linear-gradient(90deg, #5865f2, #8873dc); 
+        background-size: 100%; 
+        background-repeat: repeat;
+        border-radius: 15px;
+    }
+
+    ul { list-style-type: none; }
+    li { margin-left: -50px; }
+
+    .sectPlan { font-size: 25px; }
+    .sectPrice { font-size: 20px; }
+
+    .breakpointTenor { opacity: 0.1%; transition: .5s; }
+    .tenorHint { opacity: 25%; transition: .5s; }
+
+    .tenorSect:hover { box-shadow: 0 0 15px black; }
+    .tenorSect:hover .tenorHint{ opacity: 0%; }
+
+    .breakpointTenor:hover { opacity: 100%; }
+    
+    .bassSect:hover {  box-shadow: 0 0 15px black; }
+    .bassSect:hover .tenorHint{ opacity: 0%; }
+
+    .valveSect:hover {  box-shadow: 0 0 15px black; }
+    .valveSect:hover .tenorHint{ opacity: 0%; }
+}
+
+@media (min-width: 995px)
+and (max-width: 2560px)  {
+    .priceHolder {
+        width: 100%;
+        height: 300px;
+        top: 30%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .priceSect {
+        width: 800px;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+        background-image: linear-gradient(60deg, #5865f2, #8873dc);
+        background-size: 100%;
+        background-repeat: repeat;
+        box-shadow: 0 0 0 black;
+        transition: .5s;
+    }
+
+    .tenorSect .tenorHint {
+        top: 50%;
+        left: 17%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .tenorSect {
+        width: 256px;
+        height: 85%;
+        text-align: center;
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+    }
+
+    .tenorSect .breakpointTenor {
+        opacity: 0.1%; 
+        transition: .5s;
+    }
+
+    .tenorBreak {
+        height: 85%;
+        width: 1.5px;
+        opacity: 25%;
+        top: 50%;
+        left: 33%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    .bassSect {
+        width: 265px;
+        height: 85%;
+        text-align: center;
+        font-family: 'Monsterrat', sans-serif;
+        color: white;
+        top: 43%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
+    }
+
+    .bassSect .breakpointTenor {
+        opacity: 0.1%; 
+        transition: .5s;
+    }
+
+    .bassSect .tenorHint {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .bassBreak {
+        height: 85%;
+        width: 1.5px;
+        opacity: 25%;
+        top: 50%;
+        left: 67%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%); 
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    .valveSect {
+        width: 265px; 
+        height: 85%; 
+        text-align: center; 
+        font-family: 'Monsterrat', sans-serif; 
+        color: white; 
+        top: 43%; left: 85%; 
+        position: absolute; 
+        -ms-transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
+    }
+
+    .valveSect .breakpointTenor {
+        opacity: 0.1%; 
+        transition: .5s;
+    }
+
+    .valveSect .tenorHint {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    ul { list-style-type: none; }
+    li { margin-left: -50px; }
+
+    .sectPlan { font-size: 25px; }
+    .sectPrice { font-size: 20px; }    
+    
+    .tenorHint { opacity: 15%; transition: .5s; }
+    .priceSect:hover { box-shadow: 0 0 10px black; }
+
+    .tenorSect:hover  .breakpointTenor { opacity: 100%; }
+    .tenorSect:hover .tenorHint{ opacity: 0%; }
+
+    .bassSect:hover .breakpointTenor { opacity: 100%; }
+    .bassSect:hover .tenorHint{ opacity: 0%; }
+
+    .valveSect:hover .breakpointTenor { opacity: 100%; }
+    .valveSect:hover .tenorHint { opacity: 0%; }
+}   

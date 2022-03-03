@@ -18,6 +18,47 @@ and (max-width: 990px)  {
         transform: translate(-50%, -50%);
     }
 
+    .priceTitle {
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+        font-size: 30px;
+        top: -40px;
+        left: 50%;
+        width: 230px;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 101;
+        letter-spacing: 1.5px;
+    }   
+
+    .checkoutButton {
+        top: 140%;
+        left: 64%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 175px;
+        height: 30px;
+        border-radius: 25px;
+        color: white;
+        background-color: #8873dc;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: initial;
+        text-indent: 0;
+    }
+
+    .checkoutText {
+        text-align: center;
+    }
+
+    .checkoutText::after{
+        content: "Upgrade Now";
+    }
+
+
     .priceSect {
         width: 300px; 
         height: 800px; 
@@ -47,6 +88,8 @@ and (max-width: 990px)  {
         background-size: 100%; 
         background-repeat: repeat;
         border-radius: 15px;
+        box-shadow: 0 0 0 black;
+        transition: .5s;
     }
 
     .tenorHint {
@@ -91,6 +134,8 @@ and (max-width: 990px)  {
         background-size: 100%; 
         background-repeat: repeat; 
         border-radius: 15px;
+        box-shadow: 0 0 0 black;
+        transition: .5s;
     }
 
     .bassBreak {
@@ -124,13 +169,15 @@ and (max-width: 990px)  {
         background-size: 100%; 
         background-repeat: repeat;
         border-radius: 15px;
+        box-shadow: 0 0 0 black;
+        transition: .5s;
     }
 
     .valveBreak {
         height: 1.5px; 
         width: 55%; 
         opacity: 25%; 
-        top: 135%; 
+        top: 160%; 
         left: 50%; 
         position: absolute; 
         -ms-transform: translate(-50%, -50%); 
@@ -162,7 +209,7 @@ and (max-width: 990px)  {
 }
 
 @media (min-width: 990.1px)
-and (max-width: 2560px)  {
+and (max-width: 9999px)  {
     .priceHolder {
         width: 100%;
         height: 300px;
@@ -171,6 +218,44 @@ and (max-width: 2560px)  {
         position: absolute;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+    }
+
+    .priceTitle {
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+        font-size: 30px;
+        top: -20%;
+        left: 15%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 101;
+    }
+
+    .checkoutButton {
+        top: 120%;
+        left: 89%;
+        position: absolute;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 175px;
+        height: 30px;
+        border-radius: 25px;
+        color: white;
+        background-color: #8873dc;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: initial;
+        text-indent: 0;
+    }
+
+    .checkoutText {
+        text-align: center;
+    }
+
+    .checkoutText::after{
+        content: "Upgrade Now";
     }
 
     .priceSect {
@@ -242,7 +327,7 @@ and (max-width: 2560px)  {
     }
 
     .bassSect .tenorHint {
-        top: 50%;
+        top: 60%;
         left: 50%;
         position: absolute;
         -ms-transform: translate(-50%, -50%);
@@ -280,7 +365,7 @@ and (max-width: 2560px)  {
     }
 
     .valveSect .tenorHint {
-        top: 50%;
+        top: 60%;
         left: 50%;
         position: absolute;
         -ms-transform: translate(-50%, -50%);
